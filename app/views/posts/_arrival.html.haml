@@ -1,0 +1,12 @@
+.newpost
+  .newpost__header
+    .subject
+      ーー NEW POST ーー
+  .newpost__main
+    -# = @posts.each do |post|
+      .content
+        .content__title
+          = post.name
+        .content__image
+          -# = link_to "posts/text" do
+            = image_tag post.image, width: 340, height: 220
