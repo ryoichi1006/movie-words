@@ -1,21 +1,13 @@
 .header
-  .header__name
-    .title
-      MOVIE
-    .title
-      WORDS
-  .header__current
-    .header__current__name
-      ：
-      -# = current_user.name
-    .post_film
-      .post_film__film
-        = link_to "#" do
-          %i.fas.fa-film
-      .post_film__post
-        = link_to href="/posts/new" do
-          %i.fas.fa-pen-nib
-  .header__icons
-    .header__icons__edit
-      -# = link_to edit_user_path(current_user) do
-        = icon('fas', 'cog', class: 'icon')
+  .tr
+    ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ 
+  .search-box
+    %input.search-box-input{placeholder:"作品名で検索"}
+    %button{type:"submit",class:"sub-btn"}
+      %i.fas.fa-search
+  .tru
+    ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ 
+
+    -# = form_with model: @user do |form|
+    -#   = form.text_field :email
+    -#   = form.submit

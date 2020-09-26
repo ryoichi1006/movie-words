@@ -2,205 +2,216 @@
   box-sizing: border-box;
 }
 
-.header{
-  height: 14vh;
+.main{
+  height: 100vh;
   width: 100vw;
-  // background-color: rgb(5, 5, 34);
-  position: relative;
-  display: flex;
-  padding: 0px 50px;
-  justify-content: space-between;
-  &__name{
+  .side{
     height: 100%;
-    width: 300px;
-    padding-bottom: 10px;
+    width: 280px;
+    background-color: rgb(77, 77, 77);
+    position: fixed;
     .title{
-      color: rgb(5, 5, 34);
-      height: 50%;
+      height: 150px;
+      background-color: #000000;
+      color: white;
       font-size: 45px;
+      padding: 7px 20px 20px 40px;
+      font-weight: bold;
       font-style: oblique;
+    }
+    .currentusername{
+      height: 40px;
+      width: 100%;
+      display: inline-block;
+      font-size: 18px;
       font-weight: bold;
-    }
-  }
-  &__current{
-    height: 30px;
-    width: 650px;
-    // background-color: olive;
-    position: relative;
-    display: flex;
-    justify-content: space-between;
-    margin: 40px 20px;
-    line-height: 30px;
-    border-bottom: 2px rgb(5, 5, 34) solid;
-    &__name{
-      margin-left: 350px;
-      color: rgb(5, 5, 34);
-      font-size: 20px;
-      font-weight: bold;
-    }
-    .post_film{
-      height: 30px;
-      width: 80px;
-      // background-color: lightgreen;
-      position: relative;
-      display: flex;
-      &__post{
-        .fas{
-          color: rgb(187, 159, 0);
-          font-size: 25px;
-          font-weight: bold;
-          margin-left: 15px;
-        }
-      }
-      &__film{
-        .fas{
-          color: rgb(5, 5, 34);
-          font-size: 25px;
-          font-weight: bold;
-          
-        }
-      }
-    }
-  }
-  &__icons{
-    height: 30px;
-    width: 20px;
-    // background-color: olive;
-    position: relative;
-    display: flex;
-    justify-content: space-between;
-    margin: 40px 20px;
-    line-height: 30px;
-    &__edit{
-      .icon{
-        color: lightgray;
-        font-size: 25px;
-        font-weight: bold;
-      }
-    }
-  }
-}
-
-.newpost{
-  height: 43vh;
-  width: 100vw;
-  // background-color: rgb(5, 5, 34);
-  &__header{
-    height: 40px;
-    width: 100vw;
-    background-color: rgb(5, 5, 34);
-    .subject{
+      margin-top: 30px;
       line-height: 40px;
-      margin-left: 50px;
+      padding-left: 20px;
+      color: white;
+      .fa-user{
+        color: rgb(255, 141, 34);
+      }
+    }
+    .post{
+      height: 40px;
+      width: 100%;
+      display: inline-block;
+      font-size: 18px;
+      margin-top: 30px;
+      line-height: 40px;
+      padding-left: 35px;
+      color: white;
       font-weight: bold;
-      color: lightgray;
-      height: 20px;
-      width: 200px;
+      .fa-pen-nib{
+        color: rgb(255, 141, 34);
+      }
+    }
+    .watch{
+      height: 40px;
+      width: 100%;
+      display: inline-block;
+      font-size: 18px;
+      margin-top: 30px;
+      line-height: 40px;
+      padding-left: 35px;
+      color: white;
+      font-weight: bold;
+      .fa-film{
+        color: rgb(255, 141, 34);
+      }
+    }
+    .log-out{
+      height: 40px;
+      width: 100%;
+      display: inline-block;
+      font-size: 18px;
+      margin-top: 30px;
+      line-height: 40px;
+      padding-left: 35px;
+      color: white;
+      font-weight: bold;
+      .fa-sign-out-alt{
+        color: rgb(255, 141, 34);
+      }
+    }
+    .log-in{
+      height: 40px;
+      width: 100%;
+      display: inline-block;
+      font-size: 18px;
+      margin-top: 30px;
+      line-height: 40px;
+      padding-left: 35px;
+      color: white;
+      font-weight: bold;
+      .fa-sign-in-alt{
+        color: rgb(255, 141, 34);
+      }
+    }
+    .registration{
+      height: 40px;
+      width: 100%;
+      display: inline-block;
+      font-size: 18px;
+      margin-top: 30px;
+      line-height: 40px;
+      padding-left: 35px;
+      color: white;
+      font-weight: bold;
+      .fa-arrow-alt-circle-right{
+        color: rgb(255, 141, 34);
+      }
     }
   }
-  &__main{
-    height: calc(43vh - 40px);
-    width: 100vw;
-    overflow-y: hidden;
-    overflow-x: scroll;
-    white-space: nowrap;
-    position: relative;
-    display: flex;
-    .content{
-      height: 260px;
-      width: 340px;
-      background-color: white;
-      margin-left: 100px;
-      margin-top: 20px;
-      margin-bottom: 20px;
+  .content{
+    height: auto;
+    width: 1160px;
+    margin-left: 280px;
+    .header{
+      height: 150px;
+      width: 100%;
+      background-color: #000000;
+      .search-box{
+        height: 50px;
+        width: 900px;
+        margin: auto;
+        margin-top: 30px;
+        background-color: rgb(255, 255, 255);
+        .search-box-input{
+          height: 50px;
+          width: 850px;
+          padding-left: 10px;
+          float: left;
+        }
+        .sub-btn{
+          height: 50px;
+          width: 50px;
+          display: block;
+          background-color: rgb(77, 77, 77);
+          float: left;
+          .fa-search{
+            color: rgb(255, 141, 34);
+            font-size: 20px;
+          }
+        }
+      }
+      .tru{
+        background-color: #000000;
+        height: 20px;
+        width: 1160px;
+        margin-top: 30px;
+        color: rgb(255, 255, 255);
+        padding-left: 5px;
+        line-height: 20px;
+      }
+      .tr{
+        background-color: #000000;
+        height: 20px;
+        width: 1160px;
+        color: rgb(255, 255, 255);
+        padding-left: 5px;
+        line-height: 20px;
+      }
+    }
+    .new{
+      height: 650px;
+      width: 96%;
+      background-color: rgb(170, 170, 170);
       
-      &__title{
-        overflow-y: hidden;
-        overflow-x: scroll;
-        white-space: nowrap;
-        -ms-overflow-style: none;
-        height: 40px;
-        width: 340px;
-        padding-left: 20px;
-        padding-right: 20px;
-        line-height: 40px;
-        background-color: lightgray;
-        font-weight: bold;
-        color: rgb(5, 5, 34);
-        margin-top: 0px;
-      }
-      &__image{
-        height: calc(260px - 40px);
-        width: 340px;
-      }
-    }
-  }
-}
-
-.lanking{
-  height: 43vh;
-  width: 100vw;
-  // background-color: rgb(5, 5, 34);
-  &__header{
-    height: 40px;
-    width: 100vw;
-    background-color: rgb(5, 5, 34);
-    .subject{
-      line-height: 40px;
-      margin-left: 50px;
-      font-weight: bold;
-      color: lightgray;
-      height: 20px;
-      width: 200px;
-    }
-  }
-  &__main{
-    height: calc(100% - 40px);
-    width: 100vw;
-    &__number{
-      height: 40px;
-      width: 40px;
-      float: left;
-      color: gold;
-      font-size: 30px;
-      text-align: center;
-      margin-top: 20px;
-      margin-left: 60px;
-    }
-    &__two{
-      height: 40px;
-      width: 40px;
-      float: left;
-      color: silver;
-      font-size: 30px;
-      text-align: center;
-      margin-top: 20px;
-      margin-left: 60px;
-    }
-    &__three{
-      height: 40px;
-      width: 40px;
-      float: left;
-      color: brown;
-      font-size: 30px;
-      text-align: center;
-      margin-top: 20px;
-      margin-left: 60px;
-    }
-    &__content{
-      height: 260px;
-      width: 340px;
-      background-color: lightgray;
-      float: left;
-      margin-top: 20px;
-      &__title{
-        padding-left: 20px;
-        line-height: 60px;
-        height: 60px;
+      margin: auto;
+      .newpost{
+        margin-top: 80px;
+        height: 90px;
         width: 100%;
-        background-color: rgb(5, 5, 34);
+        background-color: rgb(77, 77, 77);
+        color: rgb(255, 141, 34);
         font-weight: bold;
-        color: lightgray;
+        line-height: 90px;
+        font-size: 25px;
+        padding-left: 30px;
+      }
+    }
+    .lanking{
+      height: 650px;
+      width: 96%;
+      background-color: rgb(170, 170, 170);
+      margin: auto;
+      .lankingpost{
+        margin-top: 160px;
+        height: 90px;
+        width: 100%;
+        background-color: rgb(77, 77, 77);
+        color: rgb(255, 141, 34);
+        font-weight: bold;
+        line-height: 90px;
+        font-size: 25px;
+        padding-left: 30px;
+      }
+    }
+    .footer{
+      height: 300px;
+      width: 100%;
+      background-color: #000000;
+      padding-top: 100px;
+      margin-top: 100px;
+      .footerlogo{
+        height: 100px;
+        width: 180px;
+        padding-left: 15px;
+        margin: auto;
+        color: white;
+        font-weight: bold;
+        font-style: oblique;
+        font-size: 35px;
+      }
+      .inc{
+        height: 15px;
+        width: 100px;
+        color: white;
+        font-size: 10px;
+        margin: auto;
+        margin-top: 20px;
       }
     }
   }
