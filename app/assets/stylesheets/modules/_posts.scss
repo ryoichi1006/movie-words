@@ -1,0 +1,226 @@
+* {
+  box-sizing: border-box;
+}
+
+.main{
+  height: 100vh;
+  width: 100vw;
+  .side{
+    height: 100%;
+    width: 280px;
+    background-color: rgb(77, 77, 77);
+    position: fixed;
+    .title{
+      height: 150px;
+      background-color: #000000;
+      color: white;
+      font-size: 45px;
+      padding: 7px 20px 20px 40px;
+      font-weight: bold;
+      font-style: oblique;
+    }
+    .currentusername{
+      height: 40px;
+      width: 100%;
+      display: inline-block;
+      font-size: 18px;
+      font-weight: bold;
+      margin-top: 30px;
+      line-height: 40px;
+      padding-left: 20px;
+      color: white;
+      .fa-user{
+        color: rgb(255, 141, 34);
+      }
+    }
+    .post{
+      height: 40px;
+      width: 100%;
+      display: inline-block;
+      font-size: 18px;
+      margin-top: 30px;
+      line-height: 40px;
+      padding-left: 35px;
+      color: white;
+      font-weight: bold;
+      .fa-pen-nib{
+        color: rgb(255, 141, 34);
+      }
+    }
+    .watch{
+      height: 40px;
+      width: 100%;
+      display: inline-block;
+      font-size: 18px;
+      margin-top: 30px;
+      line-height: 40px;
+      padding-left: 35px;
+      color: white;
+      font-weight: bold;
+      .fa-film{
+        color: rgb(255, 141, 34);
+      }
+    }
+    .log-out{
+      height: 40px;
+      width: 100%;
+      display: inline-block;
+      font-size: 18px;
+      margin-top: 30px;
+      line-height: 40px;
+      padding-left: 35px;
+      color: white;
+      font-weight: bold;
+      .fa-sign-out-alt{
+        color: rgb(255, 141, 34);
+      }
+    }
+    .log-in{
+      height: 40px;
+      width: 100%;
+      display: inline-block;
+      font-size: 18px;
+      margin-top: 30px;
+      line-height: 40px;
+      padding-left: 35px;
+      color: white;
+      font-weight: bold;
+      .fa-sign-in-alt{
+        color: rgb(255, 141, 34);
+      }
+    }
+    .registration{
+      height: 40px;
+      width: 100%;
+      display: inline-block;
+      font-size: 18px;
+      margin-top: 30px;
+      line-height: 40px;
+      padding-left: 35px;
+      color: white;
+      font-weight: bold;
+      .fa-arrow-alt-circle-right{
+        color: rgb(255, 141, 34);
+      }
+    }
+  }
+  .content{
+    height: auto;
+    width: 1160px;
+    margin-left: 280px;
+    .header{
+      height: 150px;
+      width: 100%;
+      background-color: #000000;
+      .search-box{
+        height: 50px;
+        width: 900px;
+        margin: auto;
+        margin-top: 30px;
+        background-color: rgb(255, 255, 255);
+        .search-box-input{
+          height: 50px;
+          width: 850px;
+          padding-left: 10px;
+          float: left;
+        }
+        .sub-btn{
+          height: 50px;
+          width: 50px;
+          display: block;
+          background-color: rgb(77, 77, 77);
+          float: left;
+          .fa-search{
+            color: rgb(255, 141, 34);
+            font-size: 20px;
+          }
+        }
+      }
+      .tru{
+        background-color: #000000;
+        height: 20px;
+        width: 1160px;
+        margin-top: 30px;
+        color: rgb(255, 255, 255);
+        padding-left: 5px;
+        line-height: 20px;
+      }
+      .tr{
+        background-color: #000000;
+        height: 20px;
+        width: 1160px;
+        color: rgb(255, 255, 255);
+        padding-left: 5px;
+        line-height: 20px;
+      }
+    }
+    .new{
+      height: 650px;
+      width: 96%;
+      background-color: rgb(170, 170, 170);
+      
+      margin: auto;
+      .newpost{
+        margin-top: 80px;
+        height: 90px;
+        width: 100%;
+        background-color: rgb(77, 77, 77);
+        color: rgb(255, 255, 255);
+        font-weight: bold;
+        line-height: 90px;
+        font-size: 25px;
+        padding-left: 30px;
+        .fa-plane-arrival{
+          color: rgb(255, 141, 34);
+          font-size: 30px;
+        }
+      }
+    }
+    .ranking{
+      height: 650px;
+      width: 96%;
+      background-color: rgb(170, 170, 170);
+      margin: auto;
+      .rankingpost{
+        margin-top: 160px;
+        height: 90px;
+        width: 100%;
+        background-color: rgb(77, 77, 77);
+        color: rgb(255, 255, 255);
+        font-weight: bold;
+        line-height: 90px;
+        font-size: 25px;
+        padding-left: 30px;
+        .fa-chart-line{
+          color: rgb(255, 141, 34);
+          font-size: 30px;
+        }
+      }
+    }
+    .footer{
+      height: 300px;
+      width: 100%;
+      background-color: #000000;
+      padding-top: 100px;
+      margin-top: 100px;
+      .footerlogo{
+        height: 100px;
+        width: 180px;
+        padding-left: 15px;
+        margin: auto;
+        color: white;
+        font-weight: bold;
+        font-style: oblique;
+        font-size: 35px;
+      }
+      .inc{
+        height: 15px;
+        width: 100px;
+        color: white;
+        font-size: 10px;
+        margin: auto;
+        margin-top: 20px;
+      }
+    }
+  }
+}

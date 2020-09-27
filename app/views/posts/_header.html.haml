@@ -1,0 +1,13 @@
+.header
+  .tr
+    ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ 
+  .search-box
+    %input.search-box-input{placeholder:"作品名で検索"}
+    %button{type:"submit",class:"sub-btn"}
+      %i.fas.fa-search
+  .tru
+    ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ 
+
+    -# = form_with model: @user do |form|
+    -#   = form.text_field :email
+    -#   = form.submit
