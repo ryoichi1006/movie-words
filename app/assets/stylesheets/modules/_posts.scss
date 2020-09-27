@@ -165,28 +165,36 @@
         height: 90px;
         width: 100%;
         background-color: rgb(77, 77, 77);
-        color: rgb(255, 141, 34);
+        color: rgb(255, 255, 255);
         font-weight: bold;
         line-height: 90px;
         font-size: 25px;
         padding-left: 30px;
+        .fa-plane-arrival{
+          color: rgb(255, 141, 34);
+          font-size: 30px;
+        }
       }
     }
-    .lanking{
+    .ranking{
       height: 650px;
       width: 96%;
       background-color: rgb(170, 170, 170);
       margin: auto;
-      .lankingpost{
+      .rankingpost{
         margin-top: 160px;
         height: 90px;
         width: 100%;
         background-color: rgb(77, 77, 77);
-        color: rgb(255, 141, 34);
+        color: rgb(255, 255, 255);
         font-weight: bold;
         line-height: 90px;
         font-size: 25px;
         padding-left: 30px;
+        .fa-chart-line{
+          color: rgb(255, 141, 34);
+          font-size: 30px;
+        }
       }
     }
     .footer{
