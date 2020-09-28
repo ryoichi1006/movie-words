@@ -257,6 +257,25 @@
           }
         }
       }
+      .post-btn{
+        height: 160px;
+        width: 100%;
+        border: 1px solid silver;
+        padding: 30px;
+        .sub-post-btn{
+          height: 60px;
+          width: 300px;
+          display: block;
+          margin: auto;
+          margin-top: 20px;
+          background-color: rgb(255, 141, 34);
+          color: rgb(255, 255, 255);
+          font-size: 20px;
+          font-weight: bold;
+          border: none;
+          cursor: pointer;
+        }
+      }
     }
   }
 }
