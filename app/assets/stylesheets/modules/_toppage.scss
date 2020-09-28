@@ -43,6 +43,8 @@
       padding-left: 35px;
       color: white;
       font-weight: bold;
+      text-decoration: none;
+      cursor: pointer;
       .fa-pen-nib{
         color: rgb(255, 141, 34);
       }
@@ -158,7 +160,6 @@
       height: 650px;
       width: 96%;
       background-color: rgb(170, 170, 170);
-      
       margin: auto;
       .newpost{
         margin-top: 80px;

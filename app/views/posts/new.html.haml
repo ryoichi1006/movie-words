@@ -1,0 +1,51 @@
+.post-new
+  -# = form_with model: @post, class: 'post-form', local: true do |f|
+  .postnew-header
+    %label
+      = link_to "MOVIE WORDS",root_path ,class:"toptitle"
+  .newpost-main
+    .maincontent
+      .imagecontent
+        .imagetitle
+          投稿画像（1枚）
+        .must
+          必須
+        .imagefile
+          %input.img-file{multiple:"", type:"file",  autocomplete:"off", tabindex:"-1", class:"image-file", }
+      .titlecontent
+        .titletitle
+          映画タイトル
+        .must
+          必須
+        .titletext
+          %input.title-field{type:"text",placeholder:"例：） タイタニック"}
+      .categorycontent
+        .categorytitle
+          カテゴリー
+        .must
+          必須
+        .categoryselect
+          %select.cate-select1{selected:""}
+          %select.cate-select2{selected:""}
+          %select.cate-select3{selected:""}
+      .actcontent
+        .acttitle
+          セリフを言っていた俳優／女優
+        .must
+          必須
+        .acttext
+          %input.act-field{type:"text",placeholder:"例：） レオナルド・ディカプリオ"}
+        .wordstitle
+          心に残ったセリフ
+        .must
+          必須
+        .actwords
+          %input.words-field{type:"text",placeholder:"例：） close your eyes"}
+      .textcontent
+        .texttitle
+          このセリフを選んだワケ
+        .must
+          必須
+        .texttext
+          -# = f.text_area :text, {placeholder:"そのセリフから感じたこと・私なりの解釈・エピソードなど教えて下さい", class:"text-field"}
+          %textarea.text-field{type:"text",placeholder:"そのセリフから感じたこと・私なりの解釈・エピソードなど教えて下さい。"}
