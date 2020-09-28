@@ -6,10 +6,11 @@
   %label.currentusername
     %i.far.fa-user
     エミネム
-  %label.post
-    ー
-    %i.fas.fa-pen-nib
-    投稿する
+  = link_to new_post_path do
+    %label.post
+      ー
+      %i.fas.fa-pen-nib
+      投稿する
   %label.watch
     ー
     %i.fas.fa-film

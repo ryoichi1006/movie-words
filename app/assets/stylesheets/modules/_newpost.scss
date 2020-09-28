@@ -1,0 +1,262 @@
+* {
+  box-sizing: border-box;
+}
+
+.post-new{
+  height: auto;
+  width: 100%;
+  .postnew-header{
+    height: 200px;
+    width: 100%;
+    background-color: #000000;
+    padding-top: 50px;
+    .toptitle{
+      height: 100px;
+      width: 145px;
+      margin: auto;
+      display: block;
+      color: rgb(255, 255, 255);
+      font-weight: bold;
+      font-size: 34px;
+      font-style: oblique;
+      cursor: pointer;
+      text-decoration: none;
+    }
+  }
+  .newpost-main{
+    height: auto;
+    width: 100%;
+    background-color: rgb(170, 170, 170);
+    padding-top: 50px;
+    padding-bottom: 50px;
+    .maincontent{
+      background-color: rgb(255, 255, 255);
+      height: auto;
+      width: 60%;
+      margin: auto;
+      
+      .imagecontent{
+        height: 140px;
+        width: 100%;
+        border: 1px solid silver;
+        padding: 30px;
+        .imagetitle{
+          font-weight: bold;
+          font-size: 15px;
+          float: left;
+          height: 18px;
+          width: 120px;
+          line-height: 18px;
+        }
+        .must{
+          height: 18px;
+          width: 35px;
+          font-size: 14px;
+          color: rgb(255, 255, 255);
+          background-color: rgb(255, 141, 34);
+          padding-left: 3px;
+          border-radius: 5px;
+          line-height: 18px;
+          float: left;
+          margin-left: 5px;
+        }
+        .imagefile{
+          height: 30px;
+          width: 800px;
+          margin-top: 38px;
+          padding-left: 100px;
+          .img-file{
+            width: 600px;
+            border: dashed 1px #000000;
+            cursor: pointer;
+          }
+        }
+      }
+      .titlecontent{
+        height: 170px;
+        width: 100%;
+        border: 1px solid silver;
+        padding: 30px;
+        .titletitle{
+          font-weight: bold;
+          font-size: 15px;
+          float: left;
+          height: 18px;
+          width: 90px;
+          line-height: 18px;
+        }
+        .must{
+          height: 18px;
+          width: 35px;
+          font-size: 14px;
+          color: rgb(255, 255, 255);
+          background-color: rgb(255, 141, 34);
+          padding-left: 3px;
+          border-radius: 5px;
+          line-height: 18px;
+          float: left;
+          margin-left: 5px;
+        }
+        .titletext{
+          height: 40px;
+          width: 640px;
+          background-color: rgb(170, 170, 170);
+          margin-top: 40px;
+          margin-left: 80px;
+          .title-field{
+            height: 40px;
+            width: 640px;
+            padding-left: 10px;
+          }
+        }
+      }
+      .categorycontent{
+        height: 170px;
+        width: 100%;
+        border: 1px solid silver;
+        padding: 30px;
+        .categorytitle{
+          font-weight: bold;
+          font-size: 15px;
+          float: left;
+          height: 18px;
+          width: 75px;
+          line-height: 18px;
+        }
+        .must{
+          height: 18px;
+          width: 35px;
+          font-size: 14px;
+          color: rgb(255, 255, 255);
+          background-color: rgb(255, 141, 34);
+          padding-left: 3px;
+          border-radius: 5px;
+          line-height: 18px;
+          float: left;
+          margin-left: 5px;
+        }
+        .categoryselect{
+          height: 40px;
+          width: 800px;
+          margin-top: 40px;
+          .cate-select1{
+            width: 200px;
+            height: 40px;
+            display: block;
+            float: left;
+            margin-left: 50px;
+          }
+          .cate-select2{
+            width: 200px;
+            height: 40px;
+            display: block;
+            float: left;
+            margin-left: 50px;
+          }
+          .cate-select3{
+            width: 200px;
+            height: 40px;
+            display: block;
+            float: left;
+            margin-left: 50px;
+          }
+        }
+      }
+      .actcontent{
+        height: 270px;
+        width: 100%;
+        border: 1px solid silver;
+        padding: 30px;
+        .acttitle{
+          font-weight: bold;
+          font-size: 15px;
+          float: left;
+          height: 18px;
+          width: 210px;
+          line-height: 18px;
+        }
+        .must{
+          height: 18px;
+          width: 35px;
+          font-size: 14px;
+          color: rgb(255, 255, 255);
+          background-color: rgb(255, 141, 34);
+          padding-left: 3px;
+          border-radius: 5px;
+          line-height: 18px;
+          float: left;
+          margin-left: 5px;
+        }
+        .acttext{
+          height: 50px;
+          width: 550px;
+          margin-top: 40px;
+          margin-left: 130px;
+          margin-bottom: 20px;
+          .act-field{
+            height: 50px;
+            width: 550px;
+            padding-left: 10px;
+          }
+        }
+        .wordstitle{
+          font-weight: bold;
+          font-size: 15px;
+          float: left;
+          height: 18px;
+          width: 120px;
+          line-height: 18px;
+        }
+        .actwords{
+          height: 50px;
+          width: 550px;
+          margin-top: 60px;
+          margin-left: 130px;
+          .words-field{
+            height: 50px;
+            width: 550px;
+            padding-left: 10px;
+          }
+        }
+      }
+      .textcontent{
+        height: 310px;
+        width: 100%;
+        border: 1px solid silver;
+        padding: 30px;
+        .texttitle{
+          font-weight: bold;
+          font-size: 15px;
+          float: left;
+          height: 18px;
+          width: 170px;
+          line-height: 18px;
+        }
+        .must{
+          height: 18px;
+          width: 35px;
+          font-size: 14px;
+          color: rgb(255, 255, 255);
+          background-color: rgb(255, 141, 34);
+          padding-left: 3px;
+          border-radius: 5px;
+          line-height: 18px;
+          float: left;
+          margin-left: 5px;
+        }
+        .texttext{
+          height: 200px;
+          width: 700px;
+          background-color: rgb(170, 170, 170);
+          margin-top: 40px;
+          margin-left: 50px;
+          .text-field{
+            height: 200px;
+            width: 700px;
+            padding: 20px;
+          }
+        }
+      }
+    }
+  }
+}
