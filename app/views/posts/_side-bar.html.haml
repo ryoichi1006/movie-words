@@ -3,28 +3,30 @@
     MOVIE
     %br
     WORDS
-  %label.currentusername
-    %i.far.fa-user
-    エミネム
-  = link_to new_post_path do
-    %label.post
+  -# %label.currentusername
+  -#   %i.far.fa-user
+  -#   エミネム
+  -# = link_to new_post_path do
+  -#   %label.post
+  -#     ー
+  -#     %i.fas.fa-pen-nib
+  -#     投稿する
+  -# %label.watch
+  -#   ー
+  -#   %i.fas.fa-film
+  -#   過去の投稿
+  -# %label.log-out
+  -#   ー
+  -#   %i.fas.fa-sign-out-alt
+  -#   ログアウト
+  = link_to new_user_registration_path do
+    %label.registration
       ー
-      %i.fas.fa-pen-nib
-      投稿する
-  %label.watch
-    ー
-    %i.fas.fa-film
-    過去の投稿
-  %label.log-out
-    ー
-    %i.fas.fa-sign-out-alt
-    ログアウト
-  -# %label.log-in
-  -#   ー
-  -#   %i.fas.fa-sign-in-alt
-  -#   ログイン
-  -# %label.registration
-  -#   ー
-  -#   %i.far.fa-arrow-alt-circle-right
-  -#   新規会員登録
-    
+      %i.far.fa-arrow-alt-circle-right
+      新規会員登録
+  = link_to new_user_session_path do
+    %label.log-in
+      ー
+      %i.fas.fa-sign-in-alt
+      ログイン
+  
