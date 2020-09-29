@@ -1,0 +1,90 @@
+.log-in{
+  height: 100px;
+  width: 145px;
+  color: white;
+  font-weight: bold;
+  font-size: 40px;
+  font-style: oblique;
+  margin: auto;
+  line-height: 100px;
+  padding-left: 5px;
+}
+.field{
+  height: auto;
+  width: 100%;
+  background-color: rgb(170, 170, 170);
+  padding-top: 30px;
+  padding-bottom: 10px;
+  .in-mail{
+    height: 30px;
+    width: 58px;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    display: block;
+    margin: auto;
+  }
+  .in-e{
+    height: 40px;
+    width: 300px;
+    display: block;
+    margin: auto;
+  }
+  .in-pass{
+    height: 30px;
+    width: 105px;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    display: block;
+    margin: auto;
+  }
+  .in-pas{
+    height: 40px;
+    width: 300px;
+    display: block;
+    margin: auto;
+  }
+  .in-rem{
+    display: block;
+    margin: auto;
+  }
+  .rem{
+    display: block;
+    margin: auto;
+    height: 20px;
+    width: 118px;
+  }
+}
+.actions{
+  .in-btn{
+    height: 40px;
+    width: 100px;
+    background-color: rgb(255, 141, 34);
+    color: white;
+    cursor: pointer;
+    border: none;
+    display: block;
+    margin: auto;
+    font-weight: bold;
+  }
+}
+.undd{
+  height: 190px;
+  width: 100%;
+  background-color: rgb(170, 170, 170);
+  .und-up{
+    display: block;
+    height: 30px;
+    width: 62px;
+    margin: auto;
+    color: rgb(255, 141, 34);
+  }
+  .und-pass{
+    display: block;
+    height: 30px;
+    width: 185px;
+    margin: auto;
+    color: rgb(255, 141, 34);
+  }
+}
