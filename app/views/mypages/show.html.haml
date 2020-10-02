@@ -1,0 +1,44 @@
+.my-p
+  = render "logo"
+  .my-content
+    .my-edit
+      = link_to edit_user_registration_path do
+        %button.myedit-btn
+          User情報を編集する
+    .my-details
+      %table
+        %tr
+          %th
+            nick name
+          %td
+            = current_user.nickname
+        %tr
+          %th
+            e-mail
+          %td
+            = current_user.email
+        %tr
+          %th
+            登録日
+          %td
+            = current_user.created_at
+        %tr
+          %th
+            投稿数
+          %td
+            0
+            POST
+        %tr
+          %th
+          %td
+    .my-out
+      %button.mylog-out
+        ログアウト
+    = link_to "/mypages" do
+      .mypast
+        %label.go-past
+          << 過去の投稿を見る
+    = link_to "/" do
+      .my-top
+        %label.go-top
+          << TOPへ戻る
