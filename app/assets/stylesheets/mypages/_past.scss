@@ -1,0 +1,190 @@
+* {
+  box-sizing: border-box;
+}
+
+.past{
+  height: auto;
+  width: 100%;
+  background-color: rgb(170, 170, 170);
+  .past-header{
+    height: 200px;
+    width: 100%;
+    background-color: #000000;
+    padding-top: 50px;
+    .pasttitle{
+      height: 100px;
+      width: 145px;
+      margin: auto;
+      display: block;
+      color: rgb(255, 255, 255);
+      font-weight: bold;
+      font-size: 34px;
+      font-style: oblique;
+      cursor: pointer;
+      text-decoration: none;
+    }
+  }
+  .past-main{
+    height: auto;
+    width: 100%;
+    background-color: rgb(170, 170, 170);
+    padding-top: 40px;
+    padding-bottom: 40px;
+    .past-content{
+      background-color: rgb(255, 255, 255);
+      height: 500px;
+      width: 800px;
+      padding-bottom: 40px;
+      margin: auto;
+      margin-bottom: 30px;
+      .mypost{
+        height: 70px;
+        width: 100%;
+        background-color: rgb(77, 77, 77);
+        color: white;
+        font-size: 25px;
+        font-weight: bold;
+        line-height: 70px;
+        padding-left: 30px;
+        .fa-smile{
+          font-size: 25px;
+          color: rgb(255, 141, 34);
+          margin-right: 10px;
+        }
+      }
+    }
+    .my-top{
+      height: 30px;
+      width: 200px;
+      margin: auto;
+      text-align: center;
+      text-decoration: none;
+      .go-top{
+        color: rgb(255, 141, 34);
+        font-size: 20px;
+        font-weight: bold;
+        cursor: pointer;
+        display: inline-block;
+      }
+    }
+  }
+}
+
+
+.my-p{
+  height: auto;
+  width: 100%;
+  .past-header{
+    height: 200px;
+    width: 100%;
+    background-color: #000000;
+    padding-top: 50px;
+    .pasttitle{
+      height: 100px;
+      width: 145px;
+      margin: auto;
+      display: block;
+      color: rgb(255, 255, 255);
+      font-weight: bold;
+      font-size: 34px;
+      font-style: oblique;
+      cursor: pointer;
+      text-decoration: none;
+    }
+  }
+  .my-content{
+    height: 589px;
+    width: 100%;
+    background-color: rgb(170, 170, 170);
+    padding: 50px;
+    .my-edit{
+      height: 30px;
+      width: 500px;
+      margin: auto;
+      padding-left: 330px;
+      margin-bottom: 5px;
+      .myedit-btn{
+        background-color: rgb(255, 141, 34);
+        border: none;
+        font-weight: bold;
+        color: rgb(255, 255, 255);
+        border-radius: 50px;
+        width: 170px;
+        height: 30px;
+        cursor: pointer;
+      }
+    }
+    .my-details{
+      height: 300px;
+      width: 500px;
+      background-color: rgb(255, 255, 255);
+      margin: auto;
+      margin-bottom: 5px;
+      table{
+        height: 100%;
+        width: 100%;
+        border: rgb(77, 77, 77) solid 3px;
+        th{
+          height: 30px;
+          width: 40%;
+          border: rgb(77, 77, 77) solid 1px;
+          text-align: center;
+          font-weight: bold;
+        }
+        td{
+          height: 30px;
+          width: 60%;
+          border: rgb(77, 77, 77) solid 1px;
+          text-align: center;
+          font-weight: bold;
+        }
+      }
+    }
+    .my-out{
+      height: 30px;
+      width: 500px;
+      margin: auto;
+      padding-left: 330px;
+      margin-bottom: 25px;
+      .mylog-out{
+        background-color: #000000;
+        border: none;
+        font-weight: bold;
+        color: rgb(255, 255, 255);
+        border-radius: 50px;
+        width: 170px;
+        height: 30px;
+        cursor: pointer;
+      }
+    }
+    .mypast{
+      height: 30px;
+      width: 200px;
+      margin: auto;
+      text-align: center;
+      text-decoration: none;
+      margin-bottom: 10px;
+      .go-past{
+        color: rgb(255, 141, 34);
+        font-size: 20px;
+        font-weight: bold;
+        cursor: pointer;
+        display: inline-block;
+      }
+    }
+    .my-top{
+      height: 30px;
+      width: 200px;
+      margin: auto;
+      text-align: center;
+      text-decoration: none;
+      .go-top{
+        color: rgb(255, 141, 34);
+        font-size: 20px;
+        font-weight: bold;
+        cursor: pointer;
+        display: inline-block;
+      }
+    }
+  }
+}

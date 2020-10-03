@@ -4,18 +4,20 @@
     %br
     WORDS
   - if user_signed_in?
-    %label.currentusername
-      %i.far.fa-user
-      = current_user.nickname
+    = link_to "/mypages/show" do
+      %label.currentusername
+        %i.far.fa-user
+        = current_user.nickname
     = link_to new_post_path do
       %label.post
         ー
         %i.fas.fa-pen-nib
         投稿する
-    %label.watch
-      ー
-      %i.fas.fa-film
-      過去の投稿
+    = link_to "/mypages" do
+      %label.watch
+        ー
+        %i.fas.fa-film
+        過去の投稿
     %label.log-out
       ー
       %i.fas.fa-sign-out-alt
