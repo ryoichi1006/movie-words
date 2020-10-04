@@ -1,52 +1,51 @@
-.post-new
-  -# = form_with model: @post, class: 'post-form', local: true do |f|
-  = render "logo"
-  .newpost-main
-    .maincontent
-      .imagecontent
-        .imagetitle
-          投稿画像（1枚）
-        .must
           必須
-        .imagefile
-          %input.img-file{multiple:"", type:"file",  autocomplete:"off", tabindex:"-1", class:"image-file", }
-      .titlecontent
-        .titletitle
-          映画タイトル
-        .must
-          必須
-        .titletext
-          %input.title-field{type:"text",placeholder:"例：） タイタニック"}
-      .categorycontent
-        .categorytitle
-          カテゴリー
-        .must
-          必須
-        .categoryselect
-          %select.cate-select1{selected:""}
-          %select.cate-select2{selected:""}
-          %select.cate-select3{selected:""}
-      .actcontent
-        .acttitle
-          セリフを言っていた俳優／女優
-        .must
-          必須
-        .acttext
-          %input.act-field{type:"text",placeholder:"例：） レオナルド・ディカプリオ"}
-        .wordstitle
-          心に残ったセリフ
-        .must
-          必須
-        .actwords
-          %input.words-field{type:"text",placeholder:"例：） close your eyes"}
-      .textcontent
-        .texttitle
-          このセリフを選んだワケ
-        .must
-          必須
-        .texttext
-          -# = f.text_area :text, {placeholder:"そのセリフから感じたこと・私なりの解釈・エピソードなど教えて下さい", class:"text-field"}
-          %textarea.text-field{type:"text",placeholder:"そのセリフから感じたこと・私なりの解釈・エピソードなど教えて下さい。"}
-      .post-btn
-        %button.sub-post-btn{type:"submit"}
-          POST
+= form_with model: @post, local: true do |f|
+  .post-new
+    = render "logo"
+    .newpost-main
+      .maincontent
+        .imagecontent
+          .imagetitle
+            投稿画像（1枚）
+          .must
+            必須
+          .imagefile
+            = f.file_field :image, type:"file",  autocomplete:"off", tabindex:"-1", class:"img-file"
+        .titlecontent
+          .titletitle
+            映画タイトル
+          .must
+            必須
+          .titletext
+            = f.text_field :title, placeholder:"例：） タイタニック", class: "title-field"
+        .categorycontent
+          .categorytitle
+            カテゴリー
+          .must
+            必須
+          .categoryselect
+            = f.collection_select(:category_id, @parents, :id, :name, { include_blank: "---", selected:"" }, id: "category_form")
+            -# = f.collection_select(:category_id, @parents, :id, :name, { include_blank: "---", selected:"" }, id: "category_form2")
+            -# = f.collection_select(:category_id, @parents, :id, :name, { include_blank: "---", selected:"" }, id: "category_form3")
+        .actcontent
+          .acttitle
+            セリフを言っていた俳優／女優
+          .must
+            必須
+          .acttext
+            = f.text_field :act, placeholder:"例：） レオナルド・ディカプリオ", class: "act-field"
+          .wordstitle
+            心に残ったセリフ
+          .must
+            必須
+          .actwords
+            = f.text_field :words, placeholder:"例：） close your eyes", class: "words-field"
+        .textcontent
+          .texttitle
+            このセリフを選んだワケ
+          .must
+            必須
+          .texttext
+            = f.text_area :reason, {placeholder:"そのセリフから感じたこと・私なりの解釈・エピソードなど教えて下さい", class:"text-field"}
+        .post-btn
+          = f.submit 'POST', class: 'sub-post-btn'

@@ -69,6 +69,7 @@
             width: 600px;
             border: dashed 1px #000000;
             cursor: pointer;
+            display: block;
           }
         }
       }
@@ -139,21 +140,21 @@
           height: 40px;
           width: 800px;
           margin-top: 40px;
-          .cate-select1{
+          #category_form{
             width: 200px;
             height: 40px;
             display: block;
             float: left;
             margin-left: 50px;
           }
-          .cate-select2{
+          #category_form2{
             width: 200px;
             height: 40px;
             display: block;
             float: left;
             margin-left: 50px;
           }
-          .cate-select3{
+          #category_form3{
             width: 200px;
             height: 40px;
             display: block;
