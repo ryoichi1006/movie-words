@@ -3,4 +3,5 @@ class Post < ApplicationRecord
 
   belongs_to :user, foreign_key: 'user_id'
   belongs_to :category, optional: true
+  mount_uploader :image, ImageUploader
 end
