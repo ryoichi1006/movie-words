@@ -136,7 +136,7 @@
           float: left;
           margin-left: 5px;
         }
-        .categoryselect{
+        #category_field{
           height: 40px;
           width: 800px;
           margin-top: 40px;
@@ -147,14 +147,14 @@
             float: left;
             margin-left: 50px;
           }
-          #category_form2{
+          .child_category_id{
             width: 200px;
             height: 40px;
             display: block;
             float: left;
             margin-left: 50px;
           }
-          #category_form3{
+          .gc_category_id{
             width: 200px;
             height: 40px;
             display: block;
