@@ -7,5 +7,7 @@ Rails.application.routes.draw do
       get :search
     end
   end
+  get "posts/new" == "items#new"
+  get "posts/:id" == "items#show"
   resources :mypages, only: [:index, :show]
 end
