@@ -194,10 +194,22 @@
               margin-left: 40px;
               position: relative;
               .words-words{
+                // position: absolute;
+                // left: 15px;
+                // right: 15px;
+                // bottom: 0px;
+                // font-size: 18px;
+                // color: rgb(255, 255, 255);
+                height: 250px;
+                width: 100%;
+                line-height: 50px;
+                padding-top: 200px;
+                padding-left: 15px;
+                padding-right: 15px;
                 position: absolute;
-                left: 15px;
-                right: 15px;
                 bottom: 0px;
+                overflow-x: scroll;
+                display: flex;
                 font-size: 18px;
                 color: rgb(255, 255, 255);
               }

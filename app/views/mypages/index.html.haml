@@ -11,6 +11,7 @@
               .past-posts-post
                 = image_tag("#{past.image.url}", size: '400x270', class: "pasts-img")
                 .past-post-words
+                  -# %br
                   = past.words
     = link_to "/" do
       .my-top
