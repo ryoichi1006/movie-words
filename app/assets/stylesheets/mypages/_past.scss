@@ -31,8 +31,8 @@
     padding-bottom: 40px;
     .past-content{
       background-color: rgb(255, 255, 255);
-      height: 500px;
-      width: 800px;
+      height: 450px;
+      width: 1200px;
       padding-bottom: 40px;
       margin: auto;
       margin-bottom: 30px;
@@ -44,11 +44,33 @@
         font-size: 25px;
         font-weight: bold;
         line-height: 70px;
-        padding-left: 30px;
         .fa-smile{
           font-size: 25px;
           color: rgb(255, 141, 34);
           margin-right: 10px;
+          margin-left: 30px;
+        }
+        .past-posts{
+          height: 380px;
+          width: 100%;
+          padding-top: 55px;
+          padding-bottom: 20px;
+          overflow-x: scroll;
+          display: flex;
+          .past-posts-post{
+            height: 270px;
+            width: 400px;
+            margin-left: 40px;
+            position: relative;
+            .past-post-words{
+              position: absolute;
+              left: 15px;
+              right: 15px;
+              bottom: 0px;
+              font-size: 18px;
+              color: rgb(255, 255, 255);
+            }
+          }
         }
       }
     }
