@@ -114,6 +114,7 @@
     height: auto;
     width: 1160px;
     margin-left: 280px;
+    background-color: rgb(170, 170, 170);
     .header{
       height: 150px;
       width: 100%;
@@ -161,8 +162,8 @@
       }
     }
     .new{
-      height: 650px;
-      width: 96%;
+      height: 490px;
+      width: 1110px;
       background-color: rgb(170, 170, 170);
       margin: auto;
       .newpost{
@@ -174,17 +175,53 @@
         font-weight: bold;
         line-height: 90px;
         font-size: 25px;
-        padding-left: 30px;
         .fa-plane-arrival{
           color: rgb(255, 141, 34);
           font-size: 30px;
+          margin-left: 30px;
+        }
+        .newpost-post{
+          height: 400px;
+          width: 100%;
+          background-color: rgb(255, 255, 255);
+          padding-top: 65px;
+          overflow-x: scroll;
+          display: flex;
+          .posts-posts{
+            .posts-product{
+              height: 270px;
+              width: 400px;
+              margin-left: 40px;
+              position: relative;
+              .words-words{
+                // position: absolute;
+                // left: 15px;
+                // right: 15px;
+                // bottom: 0px;
+                // font-size: 18px;
+                // color: rgb(255, 255, 255);
+                height: 250px;
+                width: 100%;
+                line-height: 50px;
+                padding-top: 200px;
+                padding-left: 15px;
+                padding-right: 15px;
+                position: absolute;
+                bottom: 0px;
+                overflow-x: scroll;
+                display: flex;
+                font-size: 18px;
+                color: rgb(255, 255, 255);
+              }
+            }
+          }
         }
       }
     }
     .ranking{
-      height: 650px;
-      width: 96%;
-      background-color: rgb(170, 170, 170);
+      height: 490px;
+      width: 1110px;
+      background-color: rgb(255, 255, 255);
       margin: auto;
       .rankingpost{
         margin-top: 160px;

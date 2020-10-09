@@ -2,6 +2,7 @@ class PostsController < ApplicationController
   before_action :set_parents, only: [:new, :create]
 
   def index
+    @posts = Post.all.limit(10).order('created_at DESC')
   end
 
   def new

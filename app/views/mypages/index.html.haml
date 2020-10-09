@@ -5,6 +5,14 @@
       .mypost
         %i.fas.fa-smile
         MY POSTS
+        .past-posts
+          - @past.each do |past|
+            = link_to post_path(past), class: "posts-posts" do
+              .past-posts-post
+                = image_tag("#{past.image.url}", size: '400x270', class: "pasts-img")
+                .past-post-words
+                  -# %br
+                  = past.words
     = link_to "/" do
       .my-top
         %label.go-top
