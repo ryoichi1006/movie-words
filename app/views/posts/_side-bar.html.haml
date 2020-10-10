@@ -18,10 +18,11 @@
         ー
         %i.fas.fa-film
         過去の投稿
-    %label.log-out
-      ー
-      %i.fas.fa-sign-out-alt
-      ログアウト
+    = link_to sign_out_path , date: {"turbolinks" => false} do
+      %label.log-out
+        ー
+        %i.fas.fa-sign-out-alt
+        ログアウト
   - else
     = link_to new_user_registration_path ,data: {"turbolinks" => false} do
       %label.registration

@@ -7,6 +7,9 @@ Rails.application.routes.draw do
       get :search
     end
   end
+  devise_scope :user do
+    get 'sign_out', to: "sessions#destroy"
+  end
   get "posts/new" == "items#new"
   get "posts/:id" == "items#show"
   resources :mypages, only: [:index, :show]
