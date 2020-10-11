@@ -120,11 +120,11 @@
       height: 150px;
       width: 100%;
       background-color: #000000;
+      padding-top: 50px;
       .search-box{
         height: 50px;
         width: 900px;
         margin: auto;
-        margin-top: 30px;
         background-color: rgb(255, 255, 255);
         .search-box-input{
           height: 50px;
@@ -138,9 +138,26 @@
           display: block;
           background-color: rgb(77, 77, 77);
           float: left;
-          .fa-search{
-            color: rgb(255, 141, 34);
-            font-size: 20px;
+          color: rgb(255, 141, 34);
+          font-size: 17px;
+          font-weight: bold;
+        }
+        .media-list{
+          .media{
+            height: 30px;
+            width: auto;
+            padding-left: 30px;
+            padding-right: 30px;
+            background-color: rgb(255, 255, 255);
+            display: inline-block;
+            line-height: 30px;
+            .media-links{
+              text-decoration: none;
+              .media-title{
+                color: #000000;
+                font-weight: bold;
+              }
+            }
           }
         }
       }

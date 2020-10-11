@@ -1,13 +1,12 @@
 .header
-  .tr
-    ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ 
   .search-box
-    %input.search-box-input{placeholder:"作品名で検索"}
-    %button{type:"submit",class:"sub-btn"}
-      %i.fas.fa-search
-  .tru
-    ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ 
-
-    -# = form_with model: @user do |form|
-    -#   = form.text_field :email
-    -#   = form.submit
+    = form_tag posts_path, :method => 'get' do
+      = text_field_tag :search, params[:search] , placeholder: "タイトルで検索", class: "search-box-input"
+      = submit_tag "検索", :title => nil, class: "sub-btn"
+    - if @search_posts
+      %ul.media-list
+        - @search_posts.each do |post|
+          %li.media
+            = link_to post_path(post), class: "media-links" do
+              .media-title
+                = post.title
