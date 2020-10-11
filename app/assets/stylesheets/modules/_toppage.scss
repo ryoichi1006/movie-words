@@ -75,6 +75,7 @@
       padding-left: 35px;
       color: white;
       font-weight: bold;
+      cursor: pointer;
       .fa-sign-out-alt{
         color: rgb(255, 141, 34);
       }
@@ -194,12 +195,6 @@
               margin-left: 40px;
               position: relative;
               .words-words{
-                // position: absolute;
-                // left: 15px;
-                // right: 15px;
-                // bottom: 0px;
-                // font-size: 18px;
-                // color: rgb(255, 255, 255);
                 height: 250px;
                 width: 100%;
                 line-height: 50px;

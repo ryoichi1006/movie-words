@@ -32,8 +32,9 @@
           %th
           %td
     .my-out
-      %button.mylog-out
-        ログアウト
+      = link_to sign_out_path , date: {"turbolinks" => false} do
+        %button.mylog-out
+          ログアウト
     = link_to "/mypages" do
       .mypast
         %label.go-past
