@@ -5,6 +5,9 @@
       .mypost
         %i.fas.fa-smile
         MY POSTS
+        = link_to new_post_path do
+          %i.fas.fa-pen-nib
+            投稿する
         .past-posts
           - @past.each do |past|
             = link_to post_path(past), class: "posts-posts" do
