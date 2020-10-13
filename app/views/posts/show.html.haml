@@ -2,9 +2,16 @@
   = render "logo"
   .show-main
     .good-btn
-      %i.far.fa-thumbs-up
-      .num-good
-        0
+      - if Like.find_by(user_id: current_user.id, post_id: @post.id)
+        = link_to "/likes/#{@post.id}/destroy", {method: "post"} do
+          %i.far.fa-thumbs-up
+        .num-good
+          = @like_count.length
+      - else
+        = link_to "/likes/#{@post.id}/create", {method: "post"} do
+          %i.far.fa-thumbs-up.thum-upup
+        .num-good
+          = @like_count.length
     .show-content
       .show-postuser
         投稿者 : 
@@ -36,6 +43,7 @@
             %button.delete-btn
               DELETE POST
           - else
+
     =link_to root_path, class:"back" do
       %label.back-btn
         << TOPへ戻る

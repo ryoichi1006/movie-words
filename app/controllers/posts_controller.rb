@@ -14,6 +14,7 @@ class PostsController < ApplicationController
     @post = Post.find(params[:id])
     @user = User.find(@post.user_id)
     @category = Category.find(@post.category_id)
+    @like_count = Like.where(post_id: @post.id)
   end
 
   def create

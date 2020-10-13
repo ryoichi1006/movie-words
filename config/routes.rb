@@ -12,5 +12,7 @@ Rails.application.routes.draw do
   end
   get "posts/new" == "items#new"
   get "posts/:id" == "items#show"
+  post "likes/:post_id/create" => "likes#create"
+  post "likes/:post_id/destroy" => "likes#destroy"
   resources :mypages, only: [:index, :show]
 end
