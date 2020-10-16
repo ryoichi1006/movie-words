@@ -1,0 +1,24 @@
+.all
+  = render "logo"
+  .all-content
+    .all-main
+      .all-post
+        %i.fas.fa-globe
+        ALL POSTS
+        = link_to new_post_path , data: {"turbolinks" => false} do
+          %i.fas.fa-pen-nib
+            投稿する
+      .all-all
+        - @posts.each do |post|
+          = link_to post_path(post), class: "all-image" do
+            .all-product
+              = image_tag("#{post.image.url}", size: '400x270', class: "all-img")
+              .post-new-title
+                = post.title
+              .words-words
+                = post.words
+        .all-page
+          = paginate(@posts)
+    =link_to root_path, class:"back" do
+      %label.back-btn
+        << TOPへ戻る

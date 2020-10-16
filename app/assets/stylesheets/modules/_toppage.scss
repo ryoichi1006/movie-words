@@ -181,12 +181,25 @@
         background-color: rgb(77, 77, 77);
         color: rgb(255, 255, 255);
         font-weight: bold;
-        line-height: 90px;
+        padding-top: 27px;
         font-size: 25px;
         padding-left: 30px;
+        position: relative;
         .fa-plane-arrival{
           color: rgb(255, 141, 34);
           font-size: 30px;
+        }
+        .all-posts{
+          height: 30px;
+          width: 160px;
+          line-height: 30px;
+          margin-top: 30px;
+          color: rgb(255, 141, 34);
+          font-size: 15px;
+          position: absolute;
+          top: 0px;
+          right: 30px;
+          cursor: pointer;
         }
       }
       .newpost-post{
@@ -313,6 +326,137 @@
         font-size: 10px;
         margin: auto;
         margin-top: 20px;
+      }
+    }
+  }
+}
+
+.all{
+  height: auto;
+  width: 100%;
+  .postnew-header{
+    height: 200px;
+    width: 100%;
+    background-color: #000000;
+    padding-top: 50px;
+    .toptitle{
+      height: 100px;
+      width: 145px;
+      margin: auto;
+      display: block;
+      color: rgb(255, 255, 255);
+      font-weight: bold;
+      font-size: 34px;
+      font-style: oblique;
+      cursor: pointer;
+      text-decoration: none;
+    }
+  }
+  .all-content{
+    height: auto;
+    width: 100%;
+    background-color: rgb(170, 170, 170);
+    padding-top: 100px;
+    padding-bottom: 100px;
+    .all-main{
+      height: auto;
+      width: 1000px;
+      background-color: rgb(255, 255, 255);
+      margin: auto;
+      .all-post{
+        height: 90px;
+        width: 1000px;
+        background-color: rgb(77, 77, 77);
+        color: rgb(255, 255, 255);
+        font-size: 25px;
+        font-weight: bold;
+        line-height: 90px;
+        .fa-globe{
+          color: rgb(255, 141, 34);
+          font-size: 25px;
+          margin-left: 30px;
+        }
+        .fa-pen-nib{
+          margin-left: 600px;
+          font-size: 16px;
+          color: rgb(255, 255, 255);
+          background-color: rgb(170, 170, 170);
+          border-radius: 20px;
+          height: 30px;
+          width: 160px;
+          line-height: 30px;
+          padding-left: 38px;
+        }
+      }
+      .all-all{
+        height: 1100px;
+        width: 1000px;
+        padding: 80px 35px 35px 35px; 
+        position: relative;
+        .all-image{
+          height: 270px;
+          width: 400px;
+          margin-left: 40px;
+          margin-bottom: 40px;
+          float: left;
+          .all-product{
+            height: 270px;
+            width: 400px;
+            position: relative;
+            .post-new-title{
+              position: absolute;
+              top: 5px;
+              left: 10px;
+              font-size: 22px;
+              color: rgb(255, 255, 255);
+              font-weight: bold;
+            }
+            .words-words{
+              font-weight: bold;
+              height: 240px;
+              width: 400px;
+              padding-top: 200px;
+              padding-left: 15px;
+              padding-right: 15px;
+              position: absolute;
+              bottom: 0px;
+              overflow-x: scroll;
+              display: flex;
+              font-size: 18px;
+              color: rgb(255, 255, 255);
+            }
+          }
+        }
+        .all-page{
+          height: 50px;
+          width: 930px;
+          line-height: 50px;
+          text-align: center;
+          position: absolute;
+          bottom: 35px;
+          font-size: 20px;
+          font-weight: bold;
+          color: rgb(255, 141, 34);
+          text-decoration: rgb(255, 141, 34);
+          a{
+            text-decoration: none;
+            color: rgb(77, 77, 77);
+          }
+        }
+      }
+    }
+    .back{
+      text-decoration: none;
+      .back-btn{
+        display: block;
+        height: 30px;
+        width: 134px;
+        font-size: 20px;
+        color: rgb(255, 141, 34);
+        margin: auto;
+        margin-top: 40px;
+        font-weight: bold;
+        cursor: pointer;
       }
     }
   }
