@@ -4,6 +4,7 @@ class PostsController < ApplicationController
   def index
     @posts = Post.all.limit(10).order('created_at DESC')
     @search_posts = Post.all.page(params[:page]).search(params[:search])
+    @all_ranks = Post.find(Like.group(:post_id).order('count(post_id) desc').limit(3).pluck(:post_id))
   end
 
   def new

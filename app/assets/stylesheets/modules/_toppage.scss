@@ -168,28 +168,11 @@
           }
         }
       }
-      .tru{
-        background-color: #000000;
-        height: 20px;
-        width: 1160px;
-        margin-top: 30px;
-        color: rgb(255, 255, 255);
-        padding-left: 5px;
-        line-height: 20px;
-      }
-      .tr{
-        background-color: #000000;
-        height: 20px;
-        width: 1160px;
-        color: rgb(255, 255, 255);
-        padding-left: 5px;
-        line-height: 20px;
-      }
     }
     .new{
       height: 490px;
       width: 1110px;
-      background-color: rgb(170, 170, 170);
+      background-color: rgb(255, 255, 255);
       margin: auto;
       .newpost{
         margin-top: 70px;
@@ -200,38 +183,47 @@
         font-weight: bold;
         line-height: 90px;
         font-size: 25px;
+        padding-left: 30px;
         .fa-plane-arrival{
           color: rgb(255, 141, 34);
           font-size: 30px;
-          margin-left: 30px;
         }
-        .newpost-post{
-          height: 400px;
-          width: 100%;
-          background-color: rgb(255, 255, 255);
-          padding-top: 65px;
-          overflow-x: scroll;
-          display: flex;
-          .posts-posts{
-            .posts-product{
-              height: 270px;
+      }
+      .newpost-post{
+        height: 400px;
+        width: 100%;
+        padding-top: 65px;
+        overflow-x: scroll;
+        display: flex;
+        .pppp-pppp{
+          height: 270px;
+          width: 400px;
+          margin-left: 40px;
+          .posts-product{
+            height: 270px;
+            width: 400px;
+            position: relative;
+            .post-new-title{
+              position: absolute;
+              top: 5px;
+              left: 10px;
+              font-size: 22px;
+              color: rgb(255, 255, 255);
+              font-weight: bold;
+            }
+            .words-words{
+              font-weight: bold;
+              height: 240px;
               width: 400px;
-              margin-left: 40px;
-              position: relative;
-              .words-words{
-                height: 250px;
-                width: 100%;
-                line-height: 50px;
-                padding-top: 200px;
-                padding-left: 15px;
-                padding-right: 15px;
-                position: absolute;
-                bottom: 0px;
-                overflow-x: scroll;
-                display: flex;
-                font-size: 18px;
-                color: rgb(255, 255, 255);
-              }
+              padding-top: 200px;
+              padding-left: 15px;
+              padding-right: 15px;
+              position: absolute;
+              bottom: 0px;
+              overflow-x: scroll;
+              display: flex;
+              font-size: 18px;
+              color: rgb(255, 255, 255);
             }
           }
         }
@@ -243,7 +235,7 @@
       background-color: rgb(255, 255, 255);
       margin: auto;
       .rankingpost{
-        margin-top: 160px;
+        margin-top: 120px;
         height: 90px;
         width: 100%;
         background-color: rgb(77, 77, 77);
@@ -255,6 +247,46 @@
         .fa-chart-line{
           color: rgb(255, 141, 34);
           font-size: 30px;
+        }
+      }
+      .good-rank{
+        height: 400px;
+        width: 100%;
+        padding-top: 85px;
+        .top-ranker{
+          float: left;
+          margin-left: 30px;
+          position: relative;
+          .rank-num{
+            height: 40px;
+            width: 40px;
+            background-color: rgb(255, 141, 34);
+            color: white;
+            border-radius: 20px;
+            position: absolute;
+            top: 5px;
+            left: 5px;
+            text-align: center;
+            line-height: 40px;
+            font-size: 20px;
+            font-weight: bold;
+          }
+          .rank-good{
+            font-weight: bold;
+            font-size: 20px;
+            color: white;
+            position: absolute;
+            top: 10px;
+            left: 65px;
+          }
+          .rank-title{
+            position: absolute;
+            left: 10px;
+            bottom: 15px;
+            font-size: 16px;
+            color: rgb(255, 255, 255);
+            font-weight: bold;
+          }
         }
       }
     }

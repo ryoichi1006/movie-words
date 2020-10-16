@@ -2,11 +2,12 @@
   .newpost
     %i.fas.fa-plane-arrival
     NEW POSTS
-    .newpost-post
-      - @posts.each do |post|
-        -# - if Transaction.find_by(post_id: post.id) == nil
-        = link_to post_path(post), class: "posts-posts" do
-          .posts-product
-            = image_tag("#{post.image.url}", size: '400x270', class: "posts-img")
-            .words-words
-              = post.words
+  .newpost-post
+    - @posts.each do |post|
+      = link_to post_path(post) ,class: "pppp-pppp" do
+        .posts-product
+          = image_tag("#{post.image.url}", size: '400x270', class: "posts-img")
+          .post-new-title
+            = post.title
+          .words-words
+            = post.words
