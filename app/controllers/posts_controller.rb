@@ -4,6 +4,11 @@ class PostsController < ApplicationController
   def index
     @posts = Post.all.limit(10).order('created_at DESC')
     @search_posts = Post.all.page(params[:page]).search(params[:search])
+    @all_ranks = Post.find(Like.group(:post_id).order('count(post_id) desc').limit(3).pluck(:post_id))
+  end
+
+  def all
+    @posts = Post.all.order("created_at DESC").page(params[:page]).per(6)
   end
 
   def new
@@ -14,6 +19,7 @@ class PostsController < ApplicationController
     @post = Post.find(params[:id])
     @user = User.find(@post.user_id)
     @category = Category.find(@post.category_id)
+    @like_count = Like.where(post_id: @post.id)
   end
 
   def create

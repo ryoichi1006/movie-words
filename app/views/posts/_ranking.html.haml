@@ -2,3 +2,15 @@
   .rankingpost
     %i.fas.fa-chart-line
     GOOD RANKING
+  .good-rank
+    - @all_ranks.each.with_index(1) do |rank,i|
+      = link_to post_path(rank), class: "posts-posts" do
+        .top-ranker
+          = image_tag("#{rank.image.url}", size: '330x230', class: "ranks-img")
+          .rank-num
+            = i
+          .rank-good
+            = Like.where(post_id: rank).length
+            GOOD!!
+          .rank-title
+            = rank.title
