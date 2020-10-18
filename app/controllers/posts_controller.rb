@@ -63,7 +63,12 @@ class PostsController < ApplicationController
   end
 
   def destroy
-    
+    @post = Post.find(params[:id])
+    if @post.destroy
+      redirect_to root_path, notice: 'POSTを削除しました'
+    else
+      render :show
+    end
   end
 
   private

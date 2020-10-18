@@ -41,7 +41,8 @@
             = link_to edit_post_path,class: "edit-link" ,data: {"turbolinks" => false} do
               %button.edit-btn
                 EDIT POST
-            = link_to "" ,data: {"turbolinks" => false} do
+            
+            = link_to post_path(@post.id), method: :delete ,data: {"turbolinks" => false} do
               %button.delete-btn
                 DELETE POST
           - else
