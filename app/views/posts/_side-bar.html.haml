@@ -18,6 +18,12 @@
         ー
         %i.fas.fa-film
         過去の投稿
+    = link_to "posts/all", date: {"turbolinks" => false} do
+      %label.side-all
+        ー
+        %i.fas.fa-globe
+        すべての投稿を見る
+
     = link_to sign_out_path , date: {"turbolinks" => false} do
       %label.log-out
         ー
