@@ -1,5 +1,4 @@
-![MOVIE WORDS](https://eigahitottobi.com/wp-content/uploads/2019/05/11046660_848104478589284_7777634139976939686_o-1024x702.jpg)
-  # 個人アプリ  『 movie words 』
+![MOVIE WORDS](https://eigahitottobi.com/wp-content/uploads/2019/05/11046660_848104478589284_7777634139976939686_o-1024x702.jpg)# 個人アプリ  『 movie words 』
 ## コンセプト
 本アプリは、「映画(movie)のセリフ(words)から感じたことや、そのセリフに対しての思いや解釈・エピソードと一緒に映画を紹介する投稿アプリ」です。
 
