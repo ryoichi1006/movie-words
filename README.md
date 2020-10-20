@@ -1,4 +1,4 @@
-![MOVIE WORDS](https://gyazo.com/13c0c73a1579ff5d098e1f1d80f25e2b)
+![MOVIE WORDS](https://i.gyazo.com/13c0c73a1579ff5d098e1f1d80f25e2b.png)
 # 個人アプリ  『 movie words 』
 ## コンセプト
 本アプリは、「映画(movie)のセリフ(words)から感じたことや、そのセリフに対しての思いや解釈・エピソードと一緒に映画を紹介する投稿アプリ」です。
