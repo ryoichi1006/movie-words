@@ -1,5 +1,5 @@
 class PostsController < ApplicationController
-  before_action :set_parents, only: [:new, :create]
+  before_action :set_parents, only: [:new, :create, :edit]
 
   def index
     @posts = Post.all.limit(10).order('created_at DESC')
@@ -46,6 +46,31 @@ class PostsController < ApplicationController
     end
   end
 
+  def edit
+    @post = Post.find(params[:id])
+    @category = Category.find(@post.category_id)
+    @child = Category.where(ancestry: @category.parent.ancestry)
+    @g_child = Category.where(ancestry: @category.ancestry)
+  end
+
+  def update
+    @post = Post.find(params[:id])
+    if @post.update(post_params)
+      redirect_to post_path, notice: 'POSTを更新しました'
+    else
+      redirect_to edit_post_path, notice: '画像を１枚以上入れて下さい'
+    end
+  end
+
+  def destroy
+    @post = Post.find(params[:id])
+    if @post.destroy
+      redirect_to root_path, notice: 'POSTを削除しました'
+    else
+      render :show
+    end
+  end
+
   private
 
   def set_parents
@@ -60,7 +85,7 @@ class PostsController < ApplicationController
       :words, 
       :reason, 
       :category_id,
-      :user_id,
+      :user_id
     ).merge(user_id: current_user.id)
   end
   

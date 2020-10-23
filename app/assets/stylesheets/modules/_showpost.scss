@@ -139,27 +139,35 @@
         }
         .curr-btn{
           height: 40px;
-          width: 75%;
+          width: 480px;
           margin: auto;
           margin-top: 50px;
           padding-left: 7px;
-          .edit-btn{
+          position: relative;
+          display: flex;
+          justify-content: space-between;
+          .edit-link{
             height: 40px;
-            width: 40%;
-            background-color: steelblue;
-            color: white;
-            border: none;
-            margin-left: 26px;
-            font-weight: bold;
+            width: 190px;
+            text-decoration: none;
+            .edit-btn{
+              height: 40px;
+              width: 190px;
+              background-color: steelblue;
+              color: white;
+              border: none;
+              font-weight: bold;
+              cursor: pointer;
+            }
           }
           .delete-btn{
             height: 40px;
-            width: 40%;
+            width: 190px;
             background-color: rgb(255, 141, 34);
             color: white;
             border: none;
-            margin-left: 40px;
             font-weight: bold;
+            cursor: pointer;
           }
         }
       }

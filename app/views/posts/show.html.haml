@@ -3,12 +3,12 @@
   .show-main
     .good-btn
       - if Like.find_by(user_id: current_user.id, post_id: @post.id)
-        = link_to "/likes/#{@post.id}/destroy", {method: "post"} do
+        = link_to "/likes/#{@post.id}/destroy", {method: "post"},data: {"turbolinks" => false} do
           %i.far.fa-thumbs-up
         .num-good
           = @like_count.length
       - else
-        = link_to "/likes/#{@post.id}/create", {method: "post"} do
+        = link_to "/likes/#{@post.id}/create", {method: "post"},data: {"turbolinks" => false} do
           %i.far.fa-thumbs-up.thum-upup
         .num-good
           = @like_count.length
@@ -38,12 +38,15 @@
           = @post.reason
         .curr-btn
           - if @post.user_id == current_user.id
-            %button.edit-btn
-              EDIT POST
-            %button.delete-btn
-              DELETE POST
+            = link_to edit_post_path,class: "edit-link" ,data: {"turbolinks" => false} do
+              %button.edit-btn
+                EDIT POST
+            
+            = link_to post_path(@post.id), method: :delete ,data: {"turbolinks" => false} do
+              %button.delete-btn
+                DELETE POST
           - else
 
-    =link_to root_path, class:"back" do
+    =link_to root_path, class:"back",data: {"turbolinks" => false} do
       %label.back-btn
         << TOPへ戻る

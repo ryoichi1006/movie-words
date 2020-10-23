@@ -26,11 +26,8 @@
           %th
             投稿数
           %td
-            0
+            = current_user.posts.length
             POST
-        %tr
-          %th
-          %td
     .my-out
       = link_to sign_out_path , date: {"turbolinks" => false} do
         %button.mylog-out
